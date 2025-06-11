@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.M.C. - Definitive Edition</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+   <!-- <button onclick="dev()">DEV BUTTON max$</button>
+    <button onclick="devMinus()">DEV BUTTON min$</button>--->
+
+
+    <header>
+        <h1>Dancing Mario Clicker : Definitive Edition</h1>
+        <button onclick="Hudba()" id="hudbaStatus">Hudba ❎</button>
+    </header>
+        <p class="spacer"></p>
+    <game id="hlavniHra">
+        <div class="left">
+            <button onclick="Klik()"><img src="img/mario.gif" class="klikacka"></button>
+            <p id="coinsOut"><img src="img/coin.png" style="height: 1em; vertical-align: middle; ">Počet coinů: 0.0</p>
+            <p id="clickOut"><img src="img/click.png" style="height: 1.2em; vertical-align: middle;">Síla kliku: 1</p>
+            <p id="autoOut"><img src="img/auto.png" style="height: 1.2em; vertical-align: middle;">Autoclicker: 0.0</p>
+            <hr>
+                <div class="konec">
+                    <p style="text-align: center; text-transform: uppercase;">Konec hry:</p>
+                <button onclick="TheEnd()"><img src="img/flag.webp"  style="height: 6em; vertical-align: middle; padding-right: 1.5em;">1 000 000 c</button>
+                </div>
+                
+        </div>
+
+        
+
+        <div class="right">
+            <button id="upKlik" onclick="upgradeKlik1()"><img src="img/klik0.png" style="height: 1.2em; vertical-align: middle; padding-right: 0.5em;">Super Mushroom: 50c | [S:2]</button> <p class="spacer2"></p> 
+
+            <button id="upKoopa" onclick="upgradeKoopa()"><img src="img/koopa.webp" style="height: 1.2em; vertical-align: middle; padding-right: 0.5em;">Koopa Clicker: 100c | [A: 0.1 c/s]</button> <p class="spacer2"></p>
+
+            <button id="upGoomba" onclick="upgradeGoomba()"><img src="img/goomba.png" style="height: 1.2em; vertical-align: middle; padding-right: 0.5em;">Goomba Generator: 500c | [A: 0.5 c/s]</button> <p class="spacer2"></p>
+
+            <button id="upBill" onclick="upgradeBill()"><img src="img/bill.webp" style="height: 1.2em; vertical-align: middle; padding-right: 0.5em;" >Bullet Bill Bot: 2000c | [A: 2 c/s]</button> <p class="spacer2"></p>
+            
+            <button id="upBomb" onclick="upgradeBomb()"><img src="img/bomb.webp" style="height: 1.2em; vertical-align: middle; padding-right: 0.5em;" >Bomb-omb Factory: 6000c| [A: 5 c/s]</button> <p class="spacer2"></p>
+
+            <button id="upYoshi" onclick="upgradeYoshi()"><img src="img/yoshi.png" style="height: 1.2em; vertical-align: middle; padding-right: 0.5em;" >Yoshi's Island: 15000c | [A: 10 c/s]</button> <p class="spacer2"></p>
+
+            <button id="upLuigi" onclick="upgradeLuigi()"><img src="img/luigi.png" style="height: 1.2em; vertical-align: middle; padding-right: 0.5em;" >Luigi Auto-tap: 40000c | [A: 25 c/s]</button> <p class="spacer2"></p>
+
+            <button id="upBowser" onclick="upgradeBowser()"><img src="img/bowser.webp" style="height: 1.2em; vertical-align: middle; padding-right: 0.5em;" >Bowser Machine: 150000c | [A: 100 c/s]</button> <p class="spacer2"></p>
+
+            
+        </div>
+    </game>
+
+    <section id="konecHra" class="bossFight">
+        <h1>Gratuluji dohrál si tuto hru! Tuhle odměnu si zaslouzíš!</h1>
+        <div class="spacer"><p></p></div>
+       
+        <button onclick="BossFightStart()" class="sunshine"><img src="img/sunshine.webp" style="height: 500px;"></button>
+    </section>
+
+    <section id="dialogHra" class="bossFight"> 
+        <p id="mluveni">HAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHA!</p>
+        <button class="dialogDalsi" onclick="dale()">Pokračovat</button>
+            <br>
+        <img src="img/bowser.webp" >
+        
+       
+
+
+    </section>
+
+    <section id="soubojHra" class="bossFight">
+        <div class="flex">
+            <div class="vlevo">
+                <h1 style="background-color: rgb(255, 0, 0); padding: 1em; border-radius: 25px;">👑 Bowser the King Koopa </h1> 
+                <p id="bossHP" class="zivoty">HP: 10000</p> 
+                <button id="attack" class="utok" onclick="utok()">Klini pro útok 🤛</button>
+                <p id="timer" class="casovac">⏱️ Čas: 10s</p>
+            </div>
+
+            <div class="vpravo">
+                <img src="img/bowser.webp" style="height: 400px;">
+            </div>
+        
+        
+    </section>
+
+    <button id="start" class="utok" style="text-align: center; margin: auto; display: block;" onclick="startBossFight()">Začít boss fight</button>
+
+    <section id="vyhra" class="winner">
+        <h1>Gratuluji! Teď už jsi skutečně dohrál hru! Děkuji ti za hraní!</h1>
+        <h2>Adam Fiala 2025</h2>
+        <p>F5 začít od znovu : )</p>
+    </section>
+
+    <p style="height: 100px;"></p>
+
+    <footer>
+        <p>&copy; AdamusGames 2025</p>
+    </footer>
+    
+    
+</body>
+</html>
