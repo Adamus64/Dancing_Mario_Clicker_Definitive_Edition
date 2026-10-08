@@ -17,7 +17,7 @@ Hra přináší klasickou mechaniku klikacích her s tématikou tancujícího Ma
 - 🪙 **Klikání & Sbírání:** Získejte mince s každým kliknutím na Maria.
 - ⚡ **Upgrady & Power-upy:** Nakupujte vylepšení, která zvyšují počet mincí za klik nebo generují mince automaticky.
 - 🎶 **Tancující animace & Zvuky:** Mario reaguje na klikání a tancuje do rytmu!
-- 💾 **Ukládání postupu:** Váš postup ve hře se automaticky ukládá v prohlížeči (LocalStorage). pozn. Bude přidáno
+- 💾 **Ukládání postupu:** Váš postup ve hře se automaticky ukládá v prohlížeči (LocalStorage).
 
 ---
 
