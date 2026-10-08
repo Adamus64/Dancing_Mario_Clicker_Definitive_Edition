@@ -184,6 +184,8 @@ footer {
     padding: 25px;
     border-radius: 25px;
     font-weight: 800;
+    width: 1000px;
+    height: 50px;
 }
 
 .dialogDalsi {
@@ -206,6 +208,7 @@ footer {
     border: none;
     padding:2em;
     font-weight: 800;
+    font-size: 25px;
 }
 
 .flex {
@@ -235,12 +238,48 @@ footer {
 }
 
 .winner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: fit-content;    
+    gap: 10px;
     margin: auto;
-    font-weight: 800;
-    color: white;
     text-align: center;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.705);
+    padding: 25px;
     border-radius: 25px;
-    display: inline-block;
+}
+
+.buttonImg{
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 15px;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: fit-content;    
+    gap: 10px;
+    margin: auto;
+    transition: transion 1s ease;
+}
+
+.reset {
+    background-color: red;
+    color: white;
+    padding: 25px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    transition: 1s ease;
+}
+
+.reset:hover {
+    background-color: yellow;
+    color: black;
+    
 }

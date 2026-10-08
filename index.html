@@ -9,13 +9,13 @@
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
-   <!-- <button onclick="dev()">DEV BUTTON max$</button>
-    <button onclick="devMinus()">DEV BUTTON min$</button>--->
+   <!--<button onclick="dev()">DEV BUTTON max$</button>
+    <button onclick="devMinus()">DEV BUTTON min$</button>-->
 
 
     <header>
         <h1>Dancing Mario Clicker : Definitive Edition</h1>
-        <button onclick="Hudba()" id="hudbaStatus">Hudba ❎</button>
+        <button onclick="Hudba()" id="hudbaStatus" style="text-align: center;">Hudba ❎</button>
     </header>
         <p class="spacer"></p>
     <game id="hlavniHra">
@@ -76,12 +76,17 @@
     <section id="soubojHra" class="bossFight">
         <div class="flex">
             <div class="vlevo">
-                <h1 style="background-color: rgb(255, 0, 0); padding: 1em; border-radius: 25px;">👑 Bowser the King Koopa </h1> 
-                <p id="bossHP" class="zivoty">HP: 10000</p> 
-                <button id="attack" class="utok" onclick="utok()">Klini pro útok 🤛</button>
+                <div class="buttonImg" style="background-color: rgb(255, 0, 0); padding: 1em; border-radius: 25px; color: white;">
+                    <img src="img/bowserIcon.png" height="100px">
+                    <h1 > Bowser the King Koopa </h1>
+                </div> 
+                    <div class="buttonGroup">
+                <p id="bossHP" class="zivoty">♥️ HP : 10000</p> 
+                
+                    <button id="attack" class="utok" onclick="utok()">Klini pro útok ⚔️</button>
                 <p id="timer" class="casovac">⏱️ Čas: 10s</p>
+                </div>
             </div>
-
             <div class="vpravo">
                 <img src="img/bowser.webp" style="height: 400px;">
             </div>
@@ -89,12 +94,12 @@
         
     </section>
 
-    <button id="start" class="utok" style="text-align: center; margin: auto; display: block;" onclick="startBossFight()">Začít boss fight</button>
+    <button id="start" class="utok" style="text-align: center; margin: auto; display: block;" onclick="startBossFight()"><img src="img/game.png" height="30px"> Začít boss fight</button>
 
     <section id="vyhra" class="winner">
-        <h1>Gratuluji! Teď už jsi skutečně dohrál hru! Děkuji ti za hraní!</h1>
-        <h2>Adam Fiala 2025</h2>
-        <p>F5 začít od znovu : )</p>
+        <h1>Gratuluji! Teď už jsi skutečně dohrál. Tento projekt jsem si opravdu užil a doufám, že i ty. Miluji Maria a učím se dělat hry v prohlížeči, ale na skákačku si ještě netroufnu. Pokud chceš začít od začátku klikni na tlačítko <b>RESET HRY</b>. Budu rád když omrkneš i jiné mé projekty.</h1>
+        <h2>Adam "Adamus" Fiala 2025 | (ver 1.1 2026)</h2>
+        <button onclick="resetovani()" class="reset">RESET HRY</button>
     </section>
 
     <p style="height: 100px;"></p>
